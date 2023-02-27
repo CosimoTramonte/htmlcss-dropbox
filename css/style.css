@@ -1,0 +1,63 @@
+/*GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*UTILITIES*/
+
+.blue-button{
+    padding: 5px 10px;
+    background-color: #0061FF;
+    color: white;
+}
+
+/*HEADER*/
+
+header{
+    height: 65px;
+    box-shadow: 0px 0px 4px 0px grey;
+    position: fixed;
+    width: 100%;
+}
+
+nav, .nav-right ul, .nav-left ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.nav-right ul li:not(:last-child), .nav-left ul li{
+    padding: 20px 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right li:last-child a{
+    color: white;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.nav-right li:last-child{
+    margin-left: 20px;
+}
+
+/*MAIN*/
+
+main{
+    padding-top: 65px;
+}
