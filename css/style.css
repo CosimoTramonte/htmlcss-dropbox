@@ -243,6 +243,9 @@ nav ul li a{
 
 .plans div h5 + span{
     color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .plans div a:nth-child(1){
@@ -344,8 +347,8 @@ nav ul li a{
 }
 
 .left-teams, .right-teams{
-    width: 25%;
-    margin-top: 30px;
+    width: 30vw;
+    margin-top: 41px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -355,7 +358,11 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    height: 50%;
+}
+
+.left-teams>div, .right-teams>div {
+    width: 15vw;
+    height: 15vw;
 }
 
 .left-teams div img{
@@ -386,7 +393,6 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    height: 50%;
 }
 
 .right-teams div img{
@@ -413,10 +419,10 @@ nav ul li a{
 }
 
 .capture-centre{
-    width: 50%;
-    max-height: 315px;
+    width: 38vw;
+    max-height: 30vw;
     background-color: #F5F5F5;
-    margin-top: 30px;
+    margin-top: 41px;
     overflow-y: scroll;
     padding: 20px;
 }
@@ -433,9 +439,6 @@ nav ul li a{
     margin-bottom: 20px;
 }
 
-.left-teams>div, .right-teams>div{
-    width: 50%;
-}
 
 /*Under team*/
 
