@@ -79,6 +79,45 @@ nav ul li a{
     color: black;
 }
 
+.nav-left ul li:not(:first-of-type):hover{
+    border-bottom: 1px solid #0061FF;
+}
+
+.nav-right ul li:not(:last-child):hover{
+    border-bottom: 1px solid #0061FF;
+}
+
+.dropdown{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .dropdown-menu li{
+    width: 200px;
+    padding: 10px;
+  }
+  
+  .dropdown-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all .5s;
+  }
+  
+  .dropdown:hover .dropdown-menu{
+    top: 56px;
+    opacity: 1;
+  }
+  
+  .dropdown:hover{
+    overflow: visible;
+  }
+
 .nav-right li:last-child a{
     color: white;
     padding: 0 10px;
