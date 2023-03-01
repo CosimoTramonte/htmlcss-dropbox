@@ -84,7 +84,7 @@ nav, .nav-right ul, .nav-left ul{
 }
 
 .nav-right ul li:not(:last-child), .nav-left ul li{
-    padding: 20px 20px;
+    padding: 17px 20px;
     font-size: 13px;
     font-weight: 600;
 }
