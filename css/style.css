@@ -366,7 +366,7 @@ nav ul li a{
 }
 
 .left-teams, .right-teams{
-    width: 30vw;
+    min-width: 30vw;
     margin-top: 41px;
     display: flex;
     flex-wrap: wrap;
@@ -443,7 +443,7 @@ nav ul li a{
 }
 
 .capture-centre{
-    width: 38vw;
+    width: 90vw;
     max-height: 30vw;
     background-color: #F5F5F5;
     margin-top: 41px;
