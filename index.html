@@ -10,7 +10,7 @@
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <title>Dropbox</title>
@@ -23,39 +23,9 @@
             <div class="nav-left">
                 <ul>
                     <li><a href="#"><img src="img/logo-small.png" alt="Logo"></a></li>
-                    <li class="dropdown">
-                        <a href="#">Perchè Dropbox?</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">opzione 1</a></li>
-                            <li><a href="#">opzione 2</a></li>
-                            <li><a href="#">opzione 3</a></li>
-                            <li><a href="#">opzione 4</a></li>
-                            <li><a href="#">opzione 5</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#">Funzioni</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">opzione 1</a></li>
-                            <li><a href="#">opzione 2</a></li>
-                            <li><a href="#">opzione 3</a></li>
-                            <li><a href="#">opzione 4</a></li>
-                            <li><a href="#">opzione 5</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#">Piani e Prezzi</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">opzione 1</a></li>
-                            <li><a href="#">opzione 2</a></li>
-                            <li><a href="#">opzione 3</a></li>
-                            <li><a href="#">opzione 4</a></li>
-                            <li><a href="#">opzione 5</a></li>
-                        </ul>
-                    </li>
-
+                    <li><a href="#jumbotron">Perchè Dropbox?</a></li>
+                    <li><a href="#dropbox-plan">Piani e Prezzi</a></li>
+                    <li><a href="#operations-dropbox">Funzioni</a></li>
                 </ul>
             </div>
     
@@ -103,7 +73,7 @@
     </header>
 
     <!--Jumbotron-->
-    <div class="jumbotron">
+    <div class="jumbotron" id="jumbotron">
         <div class="container-jumbo">
             <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
 
@@ -127,7 +97,7 @@
         <!--Container with all Section which are inside-->
         <div class="container">
 
-            <section class="dropbox-plan">
+            <section class="dropbox-plan" id="dropbox-plan">
                 <h2>Trova il piano Dropbox Business che fa per te</h2>
                 <form>
                     <input type="radio" name="plan"><span>Fatturazione mensile</span>
@@ -226,7 +196,7 @@
 
                 <div class="enterprise-plan">
 
-                    <span><i class="fa-regular fa-building"></i> Team</span>
+                    <span class="team-enterprise"><i class="fa-regular fa-building"></i> Team</span>
                     <div>
 
                         <div>
@@ -236,7 +206,9 @@
                             <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
                         </div>
 
-                        <div><a class="blue-button" href="#">Contatta l'ufficio vendite</a></div>
+                        <div>
+                            <span><a class="blue-button" href="#">Contatta l'ufficio vendite</a></span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -255,7 +227,7 @@
 
             </section>
 
-            <section class="operations-dropbox">
+            <section class="operations-dropbox" id="operations-dropbox">
 
                 <h2>Esegui più operazioni con Dropbox Business</h2>
 
@@ -314,16 +286,16 @@
             <div class="teams">
 
                 <div class="left-teams">
-                    <div>
+                    <div class="active">
                         <img src="img/designit.svg" alt="Designit">
                     </div>
-                    <div>
+                    <div class="active">
                         <img src="img/arizona_state_university.svg" alt="Univerity">
                     </div>
-                    <div>
+                    <div class="active">
                         <img src="img/university_of_florida.svg" alt="University">
                     </div>
-                    <div>
+                    <div class="active">
                         <img src="img/topps.svg" alt="topps">
                     </div>
                 </div>
@@ -341,16 +313,16 @@
                 </div>
 
                 <div class="right-teams">
-                    <div>
+                    <div class="active">
                         <img src="img/world_bicycle_relief.svg" alt="bicycle">
                     </div>
-                    <div>
+                    <div class="active">
                         <img src="img/hearst_corp.svg" alt="hearst">
                     </div>
-                    <div>
+                    <div class="active">
                         <img src="img/lonely_planet.svg" alt="planet">
                     </div>
-                    <div>
+                    <div class="active">
                         <img src="img/clear_channel.svg" alt="channel">
                     </div>
                 </div>
@@ -371,24 +343,73 @@
                 <h2>Domande frequenti</h2>
 
                 <div class="question">
-                    <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                    <span><i class="fa-solid fa-chevron-down"></i></span>
+
+                    <div class="question-row">
+
+                        <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
+                        <span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </span>
+                    </div>
+
+                    <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint velit quo molestiae veritatis, est doloribus maiores repellendus quasi quibusdam placeat, libero debitis nemo, cupiditate consequuntur vero rem obcaecati autem nesciunt veniam sed! Exercitationem sit dolor optio aliquam rem molestias dolorem nesciunt quam hic quidem. Veniam officia consequuntur quae exercitationem. Voluptatum?</p>
+
                 </div>
 
-                <div class="question">
-                    <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                    <span><i class="fa-solid fa-chevron-down"></i></span>
-                </div>
+
+                <hr>
 
                 <div class="question">
-                    <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                    <span><i class="fa-solid fa-chevron-down"></i></span>
+
+                    <div class="question-row">
+
+                        <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
+                        <span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </span>
+                    </div>
+
+                    <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint velit quo molestiae veritatis, est doloribus maiores repellendus quasi quibusdam placeat, libero debitis nemo, cupiditate consequuntur vero rem obcaecati autem nesciunt veniam sed! Exercitationem sit dolor optio aliquam rem molestias dolorem nesciunt quam hic quidem. Veniam officia consequuntur quae exercitationem. Voluptatum?</p>
+
                 </div>
 
+                <hr>
+
                 <div class="question">
-                    <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
-                    <span><i class="fa-solid fa-chevron-down"></i></span>
+
+                    <div class="question-row">
+
+                        <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
+                        <span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </span>
+                    </div>
+
+                    <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint velit quo molestiae veritatis, est doloribus maiores repellendus quasi quibusdam placeat, libero debitis nemo, cupiditate consequuntur vero rem obcaecati autem nesciunt veniam sed! Exercitationem sit dolor optio aliquam rem molestias dolorem nesciunt quam hic quidem. Veniam officia consequuntur quae exercitationem. Voluptatum?</p>
+
                 </div>
+
+                <hr>
+
+                <div class="question">
+
+                    <div class="question-row">
+
+                        <span>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?</span>
+                        <span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </span>
+                    </div>
+
+                    <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint velit quo molestiae veritatis, est doloribus maiores repellendus quasi quibusdam placeat, libero debitis nemo, cupiditate consequuntur vero rem obcaecati autem nesciunt veniam sed! Exercitationem sit dolor optio aliquam rem molestias dolorem nesciunt quam hic quidem. Veniam officia consequuntur quae exercitationem. Voluptatum?</p>
+
+                </div>
+
+                <hr>
             </div>
         </section>
 

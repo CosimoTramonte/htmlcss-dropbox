@@ -30,7 +30,14 @@ i{
     background-color: #0061FF;
     color: white;
     text-align: center;
-    max-height: 30px;
+}
+
+.blue-button:hover{
+    background-color: rgba(0, 97, 255, 0.8);
+}
+
+.white-button:hover{
+    background-color: rgba(226, 226, 226, 0.8);
 }
 
 h1{
@@ -56,6 +63,17 @@ header{
     width: 100%;
     background-color: white;
     z-index: 999;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section::before{
+    content: '';
+    display: block;
+    height: 70px;
+    margin: -70px 0 0 ;
 }
 
 nav, .nav-right ul, .nav-left ul{
@@ -90,14 +108,14 @@ nav ul li a{
 .dropdown{
     position: relative;
     overflow: hidden;
-  }
+}
   
-  .dropdown-menu li{
+.dropdown-menu li{
     width: 200px;
     padding: 10px;
-  }
+}
   
-  .dropdown-menu{
+.dropdown-menu{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -107,16 +125,16 @@ nav ul li a{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: all .5s;
-  }
+}
   
-  .dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu{
     top: 56px;
     opacity: 1;
-  }
+}
   
-  .dropdown:hover{
+.dropdown:hover{
     overflow: visible;
-  }
+}
 
 .nav-right li:last-child a{
     color: white;
@@ -149,7 +167,7 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .caption-jumbo{
@@ -200,7 +218,7 @@ nav ul li a{
 }
 
 .plans div {
-    width: 32%;
+    width: 29%;
     background-color: white;
     border: 1px solid gray;
     margin-bottom: 50px;
@@ -261,11 +279,12 @@ nav ul li a{
     padding: 5px 20px 20px 20px;
 }
 
-.enterprise-plan span{
+.team-enterprise{
     border-bottom: 1px solid gray;
     text-align: center;
     display: block;
     padding: 10px 0;
+    margin-bottom: 20px;
 }
 
 .enterprise-plan div{
@@ -363,6 +382,11 @@ nav ul li a{
 .left-teams>div, .right-teams>div {
     width: 15vw;
     height: 15vw;
+}
+
+.active:hover{
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 .left-teams div img{
@@ -478,12 +502,41 @@ nav ul li a{
     margin: 0;
 }
 
-.question{
+.question-row{
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid gray;
     padding: 20px 0;
 }
+
+.question-row + span{
+    font-weight: bold;
+}
+
+.question span .fa-chevron-down{
+    display: none;
+}
+
+.question:hover .fa-chevron-down{
+    display: block;
+}
+
+.question:hover .fa-chevron-up{
+    display: none;
+}
+
+.answer:hover .fa-chevron-down{
+    display: block;
+}
+
+.answer{
+    margin-bottom: 20px;
+    display: none;
+}
+
+.question:hover .answer{
+ display: block;
+}
+
 
 /*footer*/
 footer{
