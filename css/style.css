@@ -199,9 +199,10 @@ nav ul li a{
 /*MAIN*/
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding-top: 200px;
+    max-width: 1000px;
 }
 
 /*Dropbox plan*/
@@ -471,8 +472,9 @@ nav ul li a{
 }
 
 .container2{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    max-width: 1000px;
 }
 
 .container2 span{
